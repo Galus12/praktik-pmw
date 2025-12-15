@@ -1,13 +1,14 @@
-import React from "react";
-import Counter from "./components/Counter.jsx";
+import { useState } from 'react'
+import ProductApp from './ProductApp'
 
-const App = () => {
+function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div style={{ padding: 20 }}>
-      <h2>Redux Toolkit Counter Example</h2>
-      <Counter />
-    </div>
-  );
-};
+    <>
+      <ProductApp />
+    </>
+  )
+}
 
-export default App;
+export default App
